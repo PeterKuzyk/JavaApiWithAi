@@ -1,0 +1,7 @@
+id: 0
+taskName: string
+description: string
+dueDate: "2024-12-13T21:19:26.625Z"
+priority: 0
+status: string
+author: string
