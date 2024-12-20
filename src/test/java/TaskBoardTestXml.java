@@ -39,7 +39,6 @@ class TaskBoardTestXml {
                 </TaskItem>
                 """;
 
-
         given()
                 .contentType(ContentType.XML)
                 .log().all()
