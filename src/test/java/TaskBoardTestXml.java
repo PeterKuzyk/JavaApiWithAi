@@ -3,9 +3,12 @@ import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import javax.json.Json;
+import javax.json.JsonObject;
+
 import static io.restassured.RestAssured.given;
 
-class TaskBoardTestXml {
+public class TaskBoardTestXml {
 
     @BeforeAll
     public static void setup() {
@@ -39,6 +42,10 @@ class TaskBoardTestXml {
                 </TaskItem>
                 """;
 
+        JsonObject credentials = Json.createObjectBuilder()
+                .add("email","student@example.com")
+                .add("password", "welcome")
+                .build();
         given()
                 .contentType(ContentType.XML)
                 .log().all()
