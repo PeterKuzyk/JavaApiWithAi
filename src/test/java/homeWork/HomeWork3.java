@@ -41,11 +41,13 @@ public class HomeWork3 {
         String credentials = readJasonFromFile("src/test/resources/studentLogin.json");
 
         Response response = given()
+                .log().all()
                 .contentType(ContentType.JSON)
                 .body(credentials)
                 .when()
                 .post("/login")
                 .then()
+                .log().all()
                 .statusCode(200)
                 .extract().response();
 
@@ -64,14 +66,16 @@ public class HomeWork3 {
         email = "pk" + randomValue + "@portnov.com";
 
         String createCandidateBody = new String(Files.readAllBytes(Paths.get("src/test/resources/createCandidate.json")));
-        createCandidateBody =  createCandidateBody.replace("{email}", String.valueOf(email));
+        createCandidateBody = createCandidateBody.replace("{email}", String.valueOf(email));
 
         Response createCandidateResponse = given()
+                .log().all()
                 .contentType(ContentType.JSON)
                 .body(createCandidateBody)
                 .when()
                 .post("/candidates")
                 .then()
+                .log().all()
                 .statusCode(201)
                 .extract().response();
 
@@ -88,12 +92,14 @@ public class HomeWork3 {
         application.put("dateApplied", LocalDate.now().toString());
 
         Response applyToPositionResponse = given()
+                .log().all()
                 .contentType(ContentType.JSON)
                 .header("Authorization", "Bearer " + token)
                 .body(application)
                 .when()
                 .post("/applications")
                 .then()
+                .log().all()
                 .statusCode(201)
                 .extract().response();
 
@@ -104,10 +110,12 @@ public class HomeWork3 {
     @Order(4)
     public void testValidateApplication() {
         given()
+                .log().all()
                 .header("Authorization", "Bearer " + token)
                 .when()
                 .get("/applications/" + applicationId)
                 .then()
+                .log().all()
                 .statusCode(200);
     }
 
@@ -118,25 +126,29 @@ public class HomeWork3 {
         String updateCandidateBody = new String(Files.readAllBytes(Paths.get("src/test/resources/updateCanididate.json")));
         updateCandidateBody = updateCandidateBody.replace("{email}", String.valueOf(email));
 
-         given()
+        given()
+                .log().all()
                 .contentType(ContentType.JSON)
                 .header("Authorization", "Bearer " + token)
                 .body(updateCandidateBody)
                 .when()
                 .put("/candidates/" + candidateId)
                 .then()
+                .log().all()
                 .statusCode(200);
     }
 
     @Test
     @Order(6)
-    public void testDeleteApplication () {
+    public void testDeleteApplication() {
 
         given()
+                .log().all()
                 .header("Authorization", "Bearer " + token)
                 .when()
                 .delete("/applications/" + applicationId)
                 .then()
+                .log().all()
                 .statusCode(204);
     }
 
@@ -145,10 +157,12 @@ public class HomeWork3 {
     public void testDeleteCandidate() {
 
         given()
+                .log().all()
                 .header("Authorization", "Bearer " + token)
                 .when()
                 .delete("/candidates/" + candidateId)
                 .then()
+                .log().all()
                 .statusCode(204);
     }
 }
