@@ -60,4 +60,3 @@ public class AuthTest {
                 .statusCode(200);
     }
 }
-
