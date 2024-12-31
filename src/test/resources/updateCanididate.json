@@ -1,0 +1,12 @@
+{
+  "firstName": "TestNameUpdated",
+  "middleName": "",
+  "lastName": "TestLastnameUpdated",
+  "email": "{email}",
+  "password": "12345AbcUpdated",
+  "address": "123 Mein st",
+  "city": "Mountain view",
+  "state": "CA",
+  "zip": "97023",
+  "summary": "API automation tester Updated"
+}
