@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FirstTestWithAiGoogleTranslateTest" type="JUnit" factoryName="JUnit" folderName="New Folder" nameIsGenerated="true">
+    <module name="JavaApiWithAi" />
+    <option name="PACKAGE_NAME" value="FirstLectures" />
+    <option name="MAIN_CLASS_NAME" value="FirstLectures.FirstTestWithAiGoogleTranslateTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <envs>
+      <env name="KEY" value="AIzaSyANriv7yszmw-sbe8YN1GAmZDE5WYDDq1k" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
