@@ -46,5 +46,4 @@ public class FirstTestWithAiGoogleTranslateTest {
         String translatedText = response.path("data.translations[0].translatedText");
         assertEquals("¡Hola Mundo!", translatedText);
     }
-
 }
