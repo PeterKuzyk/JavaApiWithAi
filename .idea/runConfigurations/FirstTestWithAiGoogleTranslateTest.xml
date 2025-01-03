@@ -6,7 +6,7 @@
     <option name="METHOD_NAME" value="" />
     <option name="TEST_OBJECT" value="class" />
     <envs>
-      <env name="KEY" value="AIzaSyANriv7yszmw-sbe8YN1GAmZDE5WYDDq1k" />
+      <env name="KEY" value="$KEY$" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />
