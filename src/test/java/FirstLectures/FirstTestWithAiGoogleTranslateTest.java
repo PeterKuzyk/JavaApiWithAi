@@ -1,3 +1,5 @@
+package FirstLectures;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -13,8 +15,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FirstTestWithAiGoogleTranslateTest {
 
     private static final String API_KEY = System.getenv("KEY");
-
-    // private static final String API_KEY = "AIzaSyANriv7yszmw-sbe8YN1GAmZDE5WYDDq1k";
 
     @BeforeAll
     public static void setup() {
