@@ -16,9 +16,7 @@ import static org.hamcrest.Matchers.containsStringIgnoringCase;
 
 public class GoogleTranslationTest {
 
-
-    //private static final String API_KEY = System.getenv("KEY");;
-    private static final String API_KEY = "AIzaSyANriv7yszmw-sbe8YN1GAmZDE5WYDDq1k";
+    private static final String API_KEY = System.getenv("KEY");;
 
     @BeforeAll
     public static void setup() {
