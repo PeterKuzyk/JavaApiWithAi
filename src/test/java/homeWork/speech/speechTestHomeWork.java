@@ -23,7 +23,7 @@ public class speechTestHomeWork {
 
     @Test
     public void testConversationToText() {
-        File myAudio = new File("myTestfFle.mp3");
+        File myAudio = new File("src/test/resources/mp3/myTestfFle.mp3");
 
         Response response = given()
                 .contentType(ContentType.MULTIPART)
@@ -42,7 +42,7 @@ public class speechTestHomeWork {
 
     @Test
     public void testConversationToText2() {
-        File myAudioTwo = new File("file2.mp3");
+        File myAudioTwo = new File("src/test/resources/mp3/file2.mp3");
 
         Response response = given()
                 .contentType(ContentType.MULTIPART)
@@ -61,7 +61,7 @@ public class speechTestHomeWork {
 
     @Test
     public void testConversationToText3() {
-        File myAudioTwo = new File("file2.mp3");
+        File myAudioTwo = new File("src/test/resources/mp3/file2.mp3");
 
         Response response = given()
                 .contentType(ContentType.MULTIPART)
