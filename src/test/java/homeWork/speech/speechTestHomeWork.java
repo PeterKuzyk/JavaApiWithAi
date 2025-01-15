@@ -61,7 +61,7 @@ public class speechTestHomeWork {
 
     @Test
     public void testConversationToText3() {
-        File myAudioTwo = new File("src/test/resources/mp3/file2.mp3");
+        File myAudioTwo = new File("trest4.mp3");
 
         Response response = given()
                 .contentType(ContentType.MULTIPART)
@@ -75,6 +75,6 @@ public class speechTestHomeWork {
                 .extract().response();
 
         String transcript = response.path("jsonResponse.results.transcripts[0].transcript");
-        assertThat(transcript, equalTo("Credit vapor."));
+        assertThat(transcript, equalTo("Was loose versus dust. Yeah, yeah, yeah."));
     }
 }
