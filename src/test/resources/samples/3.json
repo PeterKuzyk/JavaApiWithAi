@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "name": "Alice",
+  "age": 28,
+  "isMember": true,
+  "roles": ["moderator"],
+  "contact": {
+    "email": "alice@example.com",
+    "phone": "987-654-3210",
+    "address": {
+      "street": "123 Elm Street",
+      "city": "Springfield",
+      "postalCode": "12345"
+    }
+  },
+  "purchases": [
+    {
+      "itemId": 101,
+      "name": "Laptop",
+      "price": 999.99,
+      "quantity": 1
+    },
+    {
+      "itemId": 102,
+      "name": "Smartphone",
+      "price": 699.49,
+      "quantity": 2
+    }
+  ]
+}
