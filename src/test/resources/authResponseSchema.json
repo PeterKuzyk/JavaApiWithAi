@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "authenticated": {
+      "type": "boolean"
+    },
+    "token": {
+      "type": "string"
+    },
+    "issuedAt": {
+      "type": "integer"
+    },
+    "expiresAt": {
+      "type": "integer"
+    }
+  },
+  "required": ["authenticated", "token", "issuedAt", "expiresAt"]
+}

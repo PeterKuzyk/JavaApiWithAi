@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "name": "Jane Doe",
+  "age": 25,
+  "isMember": false,
+  "roles": ["user", "admin"],
+  "contact": {
+    "email": "jane.doe@example.com",
+    "phone": "123-456-7890"
+  }
+}
