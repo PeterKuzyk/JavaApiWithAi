@@ -77,4 +77,23 @@ public class speechTestHomeWork {
         String transcript = response.path("jsonResponse.results.transcripts[0].transcript");
         assertThat(transcript, equalTo("Was loose versus dust. Yeah, yeah, yeah."));
     }
+
+    @Test
+    public void testConversationToText4() {
+        File myAudioTwo = new File("modo.mp3");
+
+        Response response = given()
+                .contentType(ContentType.MULTIPART)
+                .header("X-Api-Key", API_KEY)
+                .multiPart("audioFile", myAudioTwo)
+                .when()
+                .post("/convert-speech-to-text")
+                .then()
+                .log().all()
+                .statusCode(200)
+                .extract().response();
+
+        String transcript = response.path("jsonResponse.results.transcripts[0].transcript");
+        assertThat(transcript, equalTo("I think"));
+    }
 }
