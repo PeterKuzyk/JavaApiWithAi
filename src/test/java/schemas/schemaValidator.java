@@ -1,4 +1,4 @@
-package practise;
+package schemas;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -55,7 +55,7 @@ public class schemaValidator {
                 .then()
                 .log().all()
                 .statusCode(200)
-                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("authResponseSchema.json"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("data/authResponseSchema.json"))
                 .extract().response();
 
         assertEquals(200, response.getStatusCode());
@@ -87,7 +87,7 @@ public class schemaValidator {
                 .then()
                 .log().all()
                 .statusCode(200)
-                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("authResponseSchema.json"))
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("data/authResponseSchema.json"))
                 .extract().response();
 
         assertEquals(200, response.getStatusCode());

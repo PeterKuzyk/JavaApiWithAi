@@ -12,7 +12,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FirstTestWithAiGoogleTranslateTest {
+public class TestWithAiGoogleTranslateTest {
 
     private static final String API_KEY = System.getenv("KEY");
 

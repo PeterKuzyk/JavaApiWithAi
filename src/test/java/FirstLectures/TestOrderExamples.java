@@ -8,7 +8,7 @@ import org.junit.jupiter.api.*;
 import static io.restassured.RestAssured.given;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class PracticeWithTeacher {
+public class TestOrderExamples {
 
     private static int taskId;
 
@@ -28,7 +28,6 @@ public class PracticeWithTeacher {
                 .then()
                 .log().all()
                 .statusCode(200);
-
     }
 
     @Test

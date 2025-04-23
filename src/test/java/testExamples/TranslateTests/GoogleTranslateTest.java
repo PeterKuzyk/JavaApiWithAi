@@ -1,4 +1,4 @@
-package homeWork.TranslateTests;
+package testExamples.TranslateTests;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

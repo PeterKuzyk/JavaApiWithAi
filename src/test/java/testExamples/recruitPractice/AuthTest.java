@@ -1,4 +1,4 @@
-package homeWork.recruitPractice;
+package testExamples.recruitPractice;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
