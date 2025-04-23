@@ -1,4 +1,4 @@
-package homeWork;
+package testExamples.candidates;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -17,7 +17,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class HomeWork3 {
+public class AllPositionsTests {
 
     private static String token;
     private static String candidateId;

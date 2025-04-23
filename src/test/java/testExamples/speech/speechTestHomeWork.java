@@ -1,4 +1,4 @@
-package homeWork.speech;
+package testExamples.speech;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
